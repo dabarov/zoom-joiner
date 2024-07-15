@@ -10,11 +10,13 @@ Effortlessly save and join Zoom meetings using simple aliases
 
 ## Installation
 
-### Prerequisites
+### Option 1: Build from Source
+
+#### Prerequisites
 
 - [Go](https://golang.org/doc/install) (version 1.16+)
 
-### Steps
+#### Steps
 
 1. Clone the repository:
 
@@ -34,6 +36,31 @@ Effortlessly save and join Zoom meetings using simple aliases
    ```sh
    sudo mv zoom-joiner /usr/local/bin/
    ```
+
+### Option 2: Download Released Version
+
+1. Go to the [Releases](https://github.com/dabarov/zoom-joiner/releases) page.
+2. Download the appropriate binary for your operating system:
+   - [zoom-joiner-darwin-amd64](https://github.com/dabarov/zoom-joiner/releases/download/v0.0.1/zoom-joiner-darwin-amd64) for macOS
+   - [zoom-joiner-linux-amd64](https://github.com/dabarov/zoom-joiner/releases/download/v0.0.1/zoom-joiner-linux-amd64) for Linux
+   - [zoom-joiner-windows-amd64.exe](https://github.com/dabarov/zoom-joiner/releases/download/v0.0.1/zoom-joiner-windows-amd64.exe) for Windows
+
+#### Steps
+
+1. Once downloaded, make the binary executable (if necessary):
+   
+   ```sh
+   chmod +x zoom-joiner-darwin-amd64  # For macOS or Linux
+   ```
+
+2. Move the binary to a directory included in your PATH to run it from anywhere:
+
+   ```sh
+   sudo mv zoom-joiner-darwin-amd64 /usr/local/bin/zoom-joiner  # Example for macOS
+
+   ```
+
+   Replace /usr/local/bin/zoom-joiner with the appropriate directory for your system.
 
 ## Usage
 
